@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+  }
+  
+body {
+    font-family: "Open Sans",
+    sans-serif; 
+    line-height: 1.5;
+    
+    }
+h1,h2,h3,h4{
+    font-family: 'Montserrat', sans-serif;
+}
+.h1 { 
+    font-size: 2em;
+}
+section h1, section h2, section p{
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ section p{
+    font-family: 'Cardo',sans-serif;
+}
+.name{
+    color:white;
+    justify-self: start;
+    flex:1;
+    align-self: center;
+}    
+.links{
+    flex:1;
+    text-align: right;
+}
+#page-nav{
+    display: flex; 
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: black;
+    padding: 5px 10px;
+}
+#page-nav label, #hamburger{
+    display:none;
+    
+}
+#page-nav ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+#page-nav ul li{
+    display: inline-block;
+    padding: 10px;
+    
+}
+#page-nav ul li a{
+    color:mediumspringgreen;
+    text-decoration: none;
+}
+img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 30%;
+    padding: none;   
+
+}
+.project1Img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 100%;
+    border-radius: 5px;
+    border:2px solid black;
+}
+.linkColor{
+    color:#3F8ABF;
+    font-weight: bold;
+}
+/* Mobile and tablet users */
+@media screen and (min-width: 681px){
+    #contacts{
+        text-align: center; 
+        text-decoration: none;
+        background: black;
+        color:white;
+        list-style: none;
+    }
+    #contacts ul li{
+        list-style: none;
+        
+    }
+    #contacts li a{
+        text-decoration: none;
+        color:white;
+        
+    }
+    .backUp{
+        text-decoration: none;
+        color:#3F8ABF;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .portfolioTitle{
+        text-align: center;
+    }
+    .project1{
+        max-width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+ 
+/* Mobile and tablet users */
+@media screen and (max-width: 680px){
+    #page-nav label{
+        display: inline-block;
+        color:white;
+        font-style: normal;
+        font-size: 30px;
+        padding: 10px;
+    }
+    #page-nav ul li{
+        display: block;
+    }
+    #page-nav ul li{
+        border-top: 1px solid black;
+    }
+    #page-nav ul{
+        display: none;
+    }
+    #page-nav input:checked ~ ul{
+        
+        display: block;
+    }
+.intro{
+    text-align: center;
+}
+.portfolioTitle{
+    text-align: center;
+}
+p{
+    padding-top: 15px;
+    line-height: 24px;
+}
+#contacts{
+    text-align: left; 
+    text-decoration: none;
+    background: black;
+    color:white;
+    list-style: none;
+}
+#contacts ul li{
+    list-style: none;
+    
+}
+#contacts li a{
+    text-decoration: none;
+    color:white;
+    text-align: center;
+}
+
+.backUp{
+    text-decoration: none;
+    color:#3F8ABF;
+    text-align: center;
+}
+    
+}    
