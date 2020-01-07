@@ -10,8 +10,10 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-family: "Montserrat", sans-serif;
+  font-size: 26px;
 }
 .h1 {
   font-size: 2em;
