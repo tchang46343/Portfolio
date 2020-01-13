@@ -32,10 +32,11 @@ section p {
   color: white;
   justify-self: start;
   flex: 1;
+  position: fixed;
   align-self: center;
 }
 .links {
-  flex: 1;
+  flex: 2;
   text-align: right;
 }
 #page-nav {
@@ -100,6 +101,7 @@ img {
   color: #3f8abf;
   font-weight: bold;
 }
+
 /* Mobile and tablet users */
 @media screen and (min-width: 827px) {
   #contacts {
@@ -132,8 +134,6 @@ img {
     margin-right: auto;
   }
 }
-
-/* Mobile and tablet users */
 @media screen and (max-width: 826px) {
   #page-nav label {
     display: inline-block;
@@ -157,7 +157,7 @@ img {
   .intro {
     text-align: center;
   }
-  .portfolioTitle {
+  .projectTitle {
     text-align: center;
   }
   p {
@@ -184,5 +184,11 @@ img {
     text-decoration: none;
     color: #3f8abf;
     text-align: center;
+  }
+  #aboutMe {
+    padding: 0 25px;
+  }
+  #projects {
+    padding: 0 25px;
   }
 }
