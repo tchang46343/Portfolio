@@ -32,7 +32,6 @@ section p {
   color: white;
   justify-self: start;
   flex: 1;
-  position: fixed;
   align-self: center;
 }
 .links {
@@ -47,8 +46,33 @@ section p {
   background: black;
   padding: 5px 10px;
 }
-#page-nav label,
+/* #page-nav label, */
+
+#page-nav label {
+  display: inline-block;
+  color: white;
+  font-style: normal;
+  font-size: 30px;
+  padding: 10px;
+}
+
 #hamburger {
+  display: inline;
+}
+#page-nav ul li {
+  display: block;
+}
+#page-nav ul li {
+  border-top: 1px solid black;
+}
+#page-nav ul {
+  display: none;
+}
+#page-nav input:checked ~ ul {
+  display: block;
+}
+
+/* #hamburger {
   display: none;
 }
 #page-nav ul {
@@ -56,12 +80,12 @@ section p {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-}
-#page-nav ul li {
+} */
+/* #page-nav ul li {
   display: inline-block;
   padding: 10px;
   position: relative;
-}
+} */
 #page-nav ul li a:hover {
   color: white;
 }
@@ -102,7 +126,7 @@ img {
   font-weight: bold;
 }
 
-/* Mobile and tablet users */
+/* tablet users */
 @media screen and (min-width: 827px) {
   #contacts {
     text-align: center;
@@ -134,7 +158,7 @@ img {
     margin-right: auto;
   }
 }
-@media screen and (max-width: 826px) {
+/* @media screen and (max-width: 826px) {
   #page-nav label {
     display: inline-block;
     color: white;
@@ -191,4 +215,4 @@ img {
   #projects {
     padding: 0 25px;
   }
-}
+} */
