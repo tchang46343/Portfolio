@@ -22,7 +22,7 @@
     <title>Terrance Chang Portfolio</title>
   </head>
   <body>
-    <header class="picture">
+    <header class="navIntro">
       <nav id="page-nav">
         <div class="name">Terrance Chang</div>
         <div class="links">
@@ -47,13 +47,16 @@
                 >Github</a
               >
             </li>
+            <li>
+              <a class="nav-link scroll" href="#contact">Contact Info</a>
+            </li>
           </ul>
         </div>
       </nav>
     </header>
 
     <main role="main">
-      <img src="tcPic.jpg" />
+      <img src="tcPic.jpg" alt="Terrance Chang Pic" />
 
       <section id="aboutMe">
         <h1>
@@ -96,7 +99,7 @@
         </header>
         <div class="project">
           <h3>Build-It</h3>
-          <img class="project1Img" src="Build-It.png" />
+          <img class="project1Img" src="Build-It.png" alt="Build-It App" />
           <p>
             Build-It is a search engine application that helps users find
             information on how to complete their DIY projects. A user can
@@ -125,7 +128,11 @@
         </div>
         <div class="project">
           <h4>Motivate the Mind</h4>
-          <img class="project1Img" src="Meditation-of-mind.png" />
+          <img
+            class="project1Img"
+            src="Meditation-of-mind.png"
+            alt="Meditation-of-mind App"
+          />
           <p>
             Motivate The Mind is a mental health game designed to relieve stress
             and anxiety. The user should feel a sense of positivity and have a
@@ -141,8 +148,15 @@
             <a
               class="linkColor"
               target="_blank"
+              href="https://github.com/tchang46343/mindgame-app.git"
+              >Font-End Repo</a
+            >
+            |
+            <a
+              class="linkColor"
+              target="_blank"
               href="https://github.com/tchang46343/mind-game-api"
-              >Github</a
+              >Back-End Repo</a
             >
             |
             <a
@@ -155,7 +169,7 @@
         </div>
         <div class="project">
           <h5>Quiz App</h5>
-          <img class="project1Img" src="quizapp.jpg" />
+          <img class="project1Img" src="quizapp.jpg" alt="quizapp" />
           <p>
             Automotive Quiz is a testing application that enables service
             centers to test mechanic's knowledge. The application allows the
@@ -188,16 +202,23 @@
         </div>
       </section>
     </main>
-    <footer id="contacts">
-      <ul class="middle">
-        <li>
-          To setup a meeting, please click on email address:
-          <a href="mailto:tchang46343@gmail.com" target="_blank">
-            tchang46343@gmail.com</a
-          >
-        </li>
-      </ul>
-    </footer>
-    <script src="script.js"></script>
+    <div id="contacts">
+      <header class="connect">
+        Have a question or want to setup a meeting?
+      </header>
+      <p>
+        Send me a email and please be sure to leave your name, phone number, and
+        your company name.
+      </p>
+      <p>
+        Click On The Email To Get Started:
+        <a href="mailto:tchang46343@gmail.com" target="_blank" class="email">
+          tchang46343@gmail.com
+        </a>
+      </p>
+    </div>
   </body>
+  <footer class="legal">
+    Copyright 2020 All Rights Reserved Terrance Chang ©
+  </footer>
 </html>

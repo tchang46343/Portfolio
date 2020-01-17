@@ -1,3 +1,6 @@
+html {
+  height: 100%;
+}
 * {
   box-sizing: border-box;
 }
@@ -6,6 +9,9 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
   margin: 0;
+  background-color: "#F8F8FF";
+  /* background-image: url(background.jpg);
+  background-size: auto; */
 }
 h1,
 h2,
@@ -28,6 +34,9 @@ section p {
 section p {
   font-family: "Cardo", sans-serif;
 }
+.navIntro {
+  margin-bottom: 20px;
+}
 .name {
   color: white;
   justify-self: start;
@@ -46,7 +55,6 @@ section p {
   background: black;
   padding: 5px 10px;
 }
-/* #page-nav label, */
 
 #page-nav label {
   display: inline-block;
@@ -57,7 +65,7 @@ section p {
 }
 
 #hamburger {
-  display: inline;
+  display: none;
 }
 #page-nav ul li {
   display: block;
@@ -65,45 +73,14 @@ section p {
 #page-nav ul li {
   border-top: 1px solid black;
 }
+a {
+  color: white;
+}
 #page-nav ul {
   display: none;
 }
 #page-nav input:checked ~ ul {
   display: block;
-}
-
-/* #hamburger {
-  display: none;
-}
-#page-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-} */
-/* #page-nav ul li {
-  display: inline-block;
-  padding: 10px;
-  position: relative;
-} */
-#page-nav ul li a:hover {
-  color: white;
-}
-#page-nav ul li a {
-  color: mediumspringgreen;
-  text-decoration: none;
-}
-#page-nav ul li a::before {
-  content: "";
-  display: block;
-  height: 5px;
-  width: 0%;
-  background-color: white;
-  top: 0;
-}
-#page-nav ul li a:hover::before {
-  width: 100%;
-  transition: all ease-in-out 300ms;
 }
 
 img {
@@ -125,23 +102,29 @@ img {
   color: #3f8abf;
   font-weight: bold;
 }
+#contacts {
+  margin-top: 25px;
+  margin-bottom: none;
+  text-align: center;
+}
+.connect {
+  font-weight: bold;
+}
+.connectDirections {
+  color: white;
+}
+.email {
+  color: black;
+}
+.email:hover {
+  background-color: red;
+}
 
+.legal {
+  text-align: center;
+}
 /* tablet users */
 @media screen and (min-width: 827px) {
-  #contacts {
-    text-align: center;
-    text-decoration: none;
-    background: black;
-    color: white;
-    list-style: none;
-  }
-  #contacts ul li {
-    list-style: none;
-  }
-  #contacts li a {
-    text-decoration: none;
-    color: white;
-  }
   .backUp {
     text-decoration: none;
     color: #3f8abf;
@@ -157,62 +140,41 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
-}
-/* @media screen and (max-width: 826px) {
-  #page-nav label {
+  #hamburger {
+    display: none;
+  }
+  #page-nav ul {
     display: inline-block;
+  }
+  #page-nav ul li {
+    display: inline-block;
+    padding: 0 10px;
+  }
+  #page-nav label {
+    display: none;
     color: white;
     font-style: normal;
     font-size: 30px;
     padding: 10px;
   }
-  #page-nav ul li {
-    display: block;
-  }
-  #page-nav ul li {
-    border-top: 1px solid black;
-  }
-  #page-nav ul {
-    display: none;
-  }
-  #page-nav input:checked ~ ul {
-    display: block;
-  }
-  .intro {
-    text-align: center;
-  }
-  .projectTitle {
-    text-align: center;
-  }
-  p {
-    padding-top: 15px;
-    line-height: 24px;
-  }
-  #contacts {
-    text-align: left;
-    text-decoration: none;
-    background: black;
-    color: white;
-    list-style: none;
-  }
-  #contacts ul li {
-    list-style: none;
-  }
-  #contacts li a {
-    text-decoration: none;
-    color: white;
-    text-align: center;
-  }
 
-  .backUp {
+  #page-nav ul li a:hover {
+    color: white;
+  }
+  #page-nav ul li a {
+    color: mediumspringgreen;
     text-decoration: none;
-    color: #3f8abf;
-    text-align: center;
   }
-  #aboutMe {
-    padding: 0 25px;
+  #page-nav ul li a::before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: white;
+    top: 0;
   }
-  #projects {
-    padding: 0 25px;
+  #page-nav ul li a:hover::before {
+    width: 100%;
+    transition: all ease-in-out 300ms;
   }
-} */
+}
