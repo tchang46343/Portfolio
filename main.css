@@ -9,9 +9,7 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.5;
   margin: 0;
-  background-color: "#F8F8FF";
-  /* background-image: url(background.jpg);
-  background-size: auto; */
+  background-color: "#F8F8F9";
 }
 h1,
 h2,
@@ -34,29 +32,34 @@ section p {
 section p {
   font-family: "Cardo", sans-serif;
 }
-/* .burger {
-  position: absolute;
-  right: 0;
-  top: 0;
-} */
+
 .navIntro {
   margin-bottom: 20px;
-  border: solid blue;
+  border: solid;
+  background-color: black;
 }
 .name {
-  color: greenyellow;
+  color: white;
   justify-self: start;
   flex: 1;
   align-self: center;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-left: 10px;
+  font-size: 20px;
+  font-family: "Overpass", sans-serif;
 }
 .links {
   flex: 2;
   list-style-type: none;
-  border: solid greenyellow;
+
   z-index: 1;
   padding: 0;
   text-align: center;
   font-size: 10px;
+}
+.links li a {
+  text-decoration: none;
 }
 #page-nav {
   display: flex;
@@ -95,12 +98,23 @@ a {
   display: inline-block;
 }
 
+main {
+  padding: 0 20px;
+}
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 30%;
   padding: none;
+}
+
+.grabberIntro {
+  text-align: center;
+}
+
+.projectTitle {
+  text-align: center;
 }
 .project1Img {
   display: block;
@@ -114,10 +128,14 @@ img {
   color: #3f8abf;
   font-weight: bold;
 }
+.backUp {
+  text-align: center;
+}
 #contacts {
   margin-top: 25px;
   margin-bottom: none;
   text-align: center;
+  padding: 10px;
 }
 .connect {
   font-weight: bold;
@@ -134,7 +152,11 @@ img {
 
 .legal {
   text-align: center;
+  margin-top: 10px;
+  color: white;
+  background-color: black;
 }
+
 /* tablet users */
 @media screen and (min-width: 827px) {
   .backUp {
@@ -156,11 +178,17 @@ img {
     display: none;
   }
   #page-nav ul {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 20px;
+    width: 480px;
+    padding-left: 40px;
   }
   #page-nav ul li {
-    display: inline-block;
-    padding: 0 10px;
+    /* display: inline-block; */
+    padding: 10px;
+    font-size: 16px;
   }
   #page-nav label {
     display: none;
